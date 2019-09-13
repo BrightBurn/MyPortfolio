@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    --Text:rgb(20, 18, 18);
+    color: var(--Text);
+    font-family: 'Roboto', sans-serif;
+}
+
+.link{
+    background: black;
+    color: whitesmoke;
+    padding: 5px;
+    display: inline-block;
+    margin: 5px 0px;
+}
+.container{
+    padding: 15px;
+}
+header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: whitesmoke;
+}
+nav{
+    background: var(--Text);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#menu-btn{
+    background: none;
+    border: none;
+    float: right;
+}
+.nav-list{
+    margin-top: 15px;
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+    display: none;
+}
+.nav-link{
+    color: whitesmoke;
+    font-size: 1.5em;
+}
+.nav-list li{
+    margin-bottom: 15px;
+}
+header section{
+    width: 75%;
+}
+header .primary-text{
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+header .secondary-text{
+    text-transform: uppercase;
+    color: gray;
+    padding-left: 5px;
+}
+
+.deetz i{
+    display: block;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form input {
+    background: none;
+    border: 1px solid var(--Text);
+    color: var(--Text);
+    height: 60px;
+    margin-bottom: 30px;
+    width: 50%;
+}
+.form textarea{
+    height: 80px;
+    width: 50%;
+}
+.form button{
+    height: 50px;
+    width: 50%;
+    margin: 25px 25%;
+    background: var(--Text);
+    color: whitesmoke;
+    border: none;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.expanded{
+    transition: 400ms;
+    display: block;
+    transform: scaleY(1);
+    opacity: 1;
+}
+#services{
+    margin-top:50px;
+    height: 50vh;
+}
+#portfolio{
+    height: 50vh;
+}
+
+
+@media(max-width:500px){
+    .row{
+        display: block;
+        text-align: center;
+        background: green;
+    }
+    form{
+        display: block;
+    }
+    .form input{
+        width: 100%;
+    }
+    .form textarea{
+        width: 100%;
+    }
+    .form button{
+        width: 100%;
+    }
+}
