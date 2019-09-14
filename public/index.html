@@ -8,101 +8,69 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<nav class="container">
-    <a class="nav-link" href="index.html">Logo</a>
-    <button class="nav-link" href="" id="menu-btn">Menu</button>
-    <ul class="nav-list">
-        <li><a class="nav-link" href="">Services</a></li>
-        <li><a class="nav-link" href="">Porfolio</a></li>
-        <li><a class="nav-link" href="">Contact</a></li>
-    </ul>
-</nav>
-<header class="container">
-    <section class="primary-text">
-        <h1>Hi, i'm dallas kelley</h1>
-        <p>The Full-Stack Dev</p>
-    </section>
-    <section class="secondary-text">
-        <p>I'm the full stack developer with 6 years experience of UI/UX development and making high end, fast, and responsive web pages.</p>
-        <a class="link" href="">Hire Me</a>
-        <a class="link" href="">My Work</a>
-    </section>
-</header>
-<main>
-    <article>
-        <section id="services" class="container">
-            <div style="margin-bottom: 100px;" class="row">
-                <div id="code-written" class="box">
-                    <h2 id="counter">placeholder</h2>
-                </div>
-                <div id="customer-testimonials" class="box">
-                    <h2>placeholder</h2>
-                </div>
-                <div id="code-written" class="box">
-                    <h2>placeholder</h2>
-                </div>
-            </div>
-            <h2 style="text-align: center;">Services</h2>
-            <div class="row">
-                
-                <div class="box">
-                    <img src="" alt="">
-                    <h3>Service 1</h3>
-                </div>
-                <div class="box">
-                    <img src="" alt="">
-                    <h3>Service 2</h3>
-                </div>
-                <div class="box">
-                    <img src="" alt="">
-                    <h3>Service 3</h3>
-                </div>
-            </div>
-        </section>
-        <section id="portfolio" class="container">
-            <div class="row">
-                <div class="box">
-                    <img src="" alt="" class="resposive">
-                    <h3>Project 1</h3>
-                    <a class="link" href="">Find it Here</a>
-                </div>
-                <div class="box">
-                    <img src="" alt="" class="resposive">
-                    <h3>Project 2</h3>
-                    <a class="link" href="">Find it Here</a>
-                </div>
-                <div class="box">
-                    <img src="" alt="" class="resposive">
-                    <h3>Project 3</h3>
-                    <a class="link" href="">Find it Here</a>
-                </div>
-                <div class="box">
-                    <img src="" alt="" class="resposive">
-                    <h3>Project 4</h3>
-                    <a class="link" href="">Find it Here</a>
-                </div>
-            </div>
-        </section>
-        <section id="contact" class="container">
-            <h2>Contact Me</h2>
-            <div class="deetz">
-                <i>Phone<span> 501-956-1315</span></i>
-                <i>E-mail<span> dallaskelleydice@gmail.com</span></i>
-            </div>
-            <form class="form" action="">
-                <input type="text" placeholder="name" required>
-                <input type="Email" placeholder="email" required>
-                <input type="text" placeholder="subject">
-                <textarea name="" id="" placeholder="message">
+    <main>
+        <article>
 
-                </textarea>
-                <button type="submit">
-                    Submit
-                </button>
-            </form>
-        </section>
-    </article>
-</main>
+            <header class="container">
+                <div class="primary-text">
+                    <h1>Hi, i'm Dallas Kelley</h1>
+                    <sub>The Full-Stack Developer</sub>
+                </div>
+                <div class="secondary-text">
+                    I create high end code bases and develope fast loading sites that ensure a tourist is a frequent visitor.
+                </div>
+                <a class="link" href="">Hire Me</a>
+                <a class="link" href="">View my Work</a>
+            </header>
+            <section class="container">
+                <div class="row">
+                    <div class="box">
+                        <img src="https://via.placeholder.com/150" alt="">
+                        <h3>Project 1</h3>
+                        <a class="link" href="">Find It Here</a>
+                    </div>
+                    <div class="box">
+                        <img src="https://via.placeholder.com/150" alt="">
+                        <h3>Project 1</h3>
+                        <a class="link" href="">Find It Here</a>
+                    </div>
+                    <div class="box">
+                        <img src="https://via.placeholder.com/150" alt="">
+                        <h3>Project 1</h3>
+                        <a class="link" href="">Find It Here</a>
+                    </div>
+                    <div class="box">
+                        <img src="https://via.placeholder.com/150" alt="">
+                        <h3>Project 1</h3>
+                        <a class="link" href="">Find It Here</a>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <form action="">
+                    <fieldset>
+                        <label for="name">name(required)</label>
+                        <input type="text" id="name">
+                    </fieldset>
+                    <fieldset>
+                        <label for="email">E-mail(required)</label>
+                        <input type="email" id="email">
+                    </fieldset>
+                    <fieldset>
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject">
+                    </fieldset>
+                    <fieldset>
+                        <label for="message">Message</label>
+                        <textarea id="message"></textarea>
+                    </fieldset>
+                    <button type="submit">
+                        Send
+                    </button>
+                </form>
+            </section>
+        </article>
+    </main>
 <script src="./bundle.js"></script>
 </body>
 </html>

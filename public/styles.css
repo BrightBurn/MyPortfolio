@@ -13,128 +13,96 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.link{
-    background: black;
-    color: whitesmoke;
-    padding: 5px;
-    display: inline-block;
-    margin: 5px 0px;
-}
-.container{
-    padding: 15px;
-}
 header{
+    background: whitesmoke;
+    padding: 25px;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: whitesmoke;
 }
-nav{
+header .link{
+    margin: 5px 0;
+}
+.link{
     background: var(--Text);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-#menu-btn{
-    background: none;
-    border: none;
-    float: right;
-}
-.nav-list{
-    margin-top: 15px;
-    transform-origin: top;
-    transform: scaleY(0);
-    opacity: 0;
-    display: none;
-}
-.nav-link{
     color: whitesmoke;
-    font-size: 1.5em;
+    padding: 5px;
+    display: inline-block;
+    margin: 15px 0;
 }
-.nav-list li{
-    margin-bottom: 15px;
-}
-header section{
+header div{    
     width: 75%;
 }
 header .primary-text{
+    margin: 12px 0px;
+    text-transform: uppercase;
     font-size: 1.5em;
-    text-transform: uppercase;
-}
-header .secondary-text{
-    text-transform: uppercase;
-    color: gray;
-    padding-left: 5px;
 }
 
-.deetz i{
-    display: block;
+.box{
+    background: whitesmoke;
+    text-align: center;
 }
-.form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.box img{
+width: 100%;
+height: auto;
 }
-.form input {
+form{
+    background: whitesmoke;
+}
+form fieldset{
+    border: none;
     background: none;
+}
+form label{
+    text-transform: uppercase;
+}
+form input{
+    width: 100%;
+    padding: 15px;
+    display: block;
     border: 1px solid var(--Text);
-    color: var(--Text);
-    height: 60px;
-    margin-bottom: 30px;
-    width: 50%;
 }
-.form textarea{
-    height: 80px;
-    width: 50%;
+form textarea{
+    width: 100%;
+    display: block;
+    height: 300px;
 }
-.form button{
-    height: 50px;
-    width: 50%;
-    margin: 25px 25%;
+form button{
+    width: 100%;
+    display: block;
+    border: none;
     background: var(--Text);
     color: whitesmoke;
-    border: none;
+    padding: 15px;
+    text-transform: uppercase;
 }
-
-.row{
-    display: flex;
-    justify-content: space-around;
+.success{
+    background: rgb(67, 139, 67);
 }
-
-.expanded{
-    transition: 400ms;
-    display: block;
-    transform: scaleY(1);
-    opacity: 1;
+.fail{
+    background: rgb(173, 63, 63);
 }
-#services{
-    margin-top:50px;
-    height: 50vh;
-}
-#portfolio{
-    height: 50vh;
-}
-
-
-@media(max-width:500px){
-    .row{
+@media(min-width: 500px){
+    .container{
+        padding: 15px;
+    }
+    header{
         display: block;
-        text-align: center;
-        background: green;
+    }
+    header .primary-text{
+        margin-top: 25%;
+    }
+    .row{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .box{
+        width: 25%;
+        margin-right: 5px;
     }
     form{
-        display: block;
-    }
-    .form input{
-        width: 100%;
-    }
-    .form textarea{
-        width: 100%;
-    }
-    .form button{
-        width: 100%;
+        padding: 15px;
     }
 }
